@@ -1,0 +1,42 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "base_laravel",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "/api/admin",
+            "description": "本地測試"
+        }
+    ],
+    "tags": [
+    ],
+    "paths": {
+    },
+    "components": {
+        "schemas": {
+            "Response": {
+                "properties": {
+                    "result": {
+                        "type": "string",
+                        "description": "回傳結果"
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "回傳訊息"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "securitySchemes": {
+            "name": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "security": []
+}
